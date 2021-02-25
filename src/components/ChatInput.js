@@ -69,29 +69,29 @@ border-bottom:1px solid #cccccc;
     }
 `
 
-const SendButton = styled.div`
-    background:#007a5a;
-    border-radius:2px;
-    width:32px;
-    height:32px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-right:5px;
-    cursor:pointer;
+// const SendButton = styled.div`
+//     background:#007a5a;
+//     border-radius:2px;
+//     width:32px;
+//     height:32px;
+//     display:flex;
+//     align-items:center;
+//     justify-content:center;
+//     margin-right:5px;
+//     cursor:pointer;
     
-.MuiSvgIcon-root{
-    width:18px;
-}
+// .MuiSvgIcon-root{
+//     width:18px;
+// }
 
-:hover{
-    background:#148567
-}
-`
+// :hover{
+//     background:#148567
+// }
+// `
 
-const Send = styled(SendIcon)`
-    color:#D9D9D9
-`
+// const Send = styled(SendIcon)`
+//     color:#D9D9D9
+// `
 
 const ImageContainer = styled.div`
     display:flex;
