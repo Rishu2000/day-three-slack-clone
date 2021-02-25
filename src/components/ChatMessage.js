@@ -5,7 +5,7 @@ function ChatMessage() {
     return (
         <Container>
             <UserAvtar>
-                <img src="https://randomuser.me/api/portraits/women/43.jpg"/>
+                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt=""/>
             </UserAvtar>
             <MessageContent>
                 <Name>
