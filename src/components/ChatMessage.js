@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
+import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
+import MessageIcon from '@material-ui/icons/Message';
+import ReplyIcon from '@material-ui/icons/Reply';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 function ChatMessage() {
     return (
         <Container>
+            <UserContainer>
             <UserAvtar>
                 <img src="https://randomuser.me/api/portraits/women/43.jpg" alt=""/>
             </UserAvtar>
@@ -16,6 +21,13 @@ function ChatMessage() {
                     How is Channel
                 </Text>
             </MessageContent>
+            </UserContainer>
+            <ImagesContainer>
+                <InsertEmoticonIconImg/>
+                <MessageIconImg/>
+                <ReplyIconImg/>
+                <MoreVertIconImg/>
+            </ImagesContainer>
         </Container>
     )
 }
@@ -27,6 +39,9 @@ const Container = styled.div`
     padding:8px 20px;
     display:flex;
     aling-items:center;
+    :hover{
+        background:#f2f2f2
+    }
 `
 
 const UserAvtar = styled.div`
@@ -59,3 +74,55 @@ const Name = styled.span`
 `
 
 const Text = styled.span``
+
+const UserContainer = styled.div`
+    display:flex;
+    flex:1;
+`
+
+const ImagesContainer = styled.div`
+    display:flex;
+    align-items:center;
+    color:#b3b3b3
+
+`
+
+const InsertEmoticonIconImg = styled(InsertEmoticonIcon)`
+margin-right:9px;
+:hover{
+    background:#cccccc;
+    color:white;
+}
+padding:5px;
+cursor:pointer;
+`
+
+const MessageIconImg = styled(MessageIcon)`
+margin-right:9px;
+:hover{
+    background:#cccccc;
+    color:white;
+}
+padding:5px;
+cursor:pointer;
+`
+
+const ReplyIconImg = styled(ReplyIcon)`
+margin-right:6px;
+:hover{
+    background:#cccccc;
+    color:white;
+}
+padding:5px;
+cursor:pointer;
+`
+
+const MoreVertIconImg = styled(MoreVertIcon)`
+    margin-right:6px;
+    :hover{
+        background:#cccccc;
+        color:white;
+    }
+    padding:5px;
+    cursor:pointer;
+`
