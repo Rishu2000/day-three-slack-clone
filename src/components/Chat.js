@@ -1,5 +1,4 @@
 import React from 'react'
-import ChatHeader from "./ChatHeader"
 import styled from "styled-components"
 import InfoIcon from '@material-ui/icons/Info';
 import ChatInput from "./ChatInput"

@@ -3,7 +3,6 @@ import styled from "styled-components"
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import {sidebarItemsData} from "../data/SidebarData"
 import AddIcon from '@material-ui/icons/Add';
-import {channelItemsData} from "../data/ChannelData"
 import db from "../firebase"
 
 function Sidebar(props) {
